@@ -32,9 +32,13 @@ def main():
             student_id = int(lastid) + 1
             z = "0" * (3-len(str(student_id)))
             print(f"New Id created ------>> {z}{student_id}")
-            res = input("Please enter the 5 grades for the students, please seperate with space \n")
             try:
-                grades = list(res.split(" "))
+                test1 = input("Enter score for test1: ")
+                test2 = input("Enter score for test2: ")
+                test3 = input("Enter score for test3: ")
+                test4 = input("Enter score for test4: ")
+                test5 = input("Enter score for test5: ")
+                grades = [test1, test2, test3, test4, test5]
                 all_details[f"{z}{student_id}"] = grades
                 update(all_details)
                 print("Done!")
