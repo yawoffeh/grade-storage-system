@@ -77,6 +77,7 @@ def main():
                     all_details[student_id] = student_grades
                     update(all_details)
                     print("Done!!")
+                    main()
                 except:
                     print("Action Unsucessful")
             except KeyError:
